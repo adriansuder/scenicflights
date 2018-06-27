@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.css" type="text/css">
+    <script
+         src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">
+    </script>
+    <link href="zoom.css" rel="stylesheet">
+    <script src="js/zoom.js"></script>
+    <script src="js/transition.js"></script>
+    <title>Scenic Flights</title>
+        <!-- Strona napisana jest dla rozdzielczości minimum 1200px do max 1920px. Formularze nie mają żadnych skryptów, można wpisać,
+        ale nic się nie wyśle. ;) JavaScript jest użyty tylko do sticky headera oraz do "scrollspy" - śledzenia położenia na stronie i 
+        zmianie aktywnego buttona w navbarze -->
+</head>
+<body>
+    <div id="container">
+        <div id="header-bg"></div>
+        <header class="navbar">
+            <div class="top-header header" id="top-header">
+                <div id="logo">
+                    <img src="images/overlaylogo.png" alt="Logo Scenic FLights">
+                </div>
+                <nav id="nav">
+                    <ul id="top-menu">
+                        <li class="active"><a  href="#">HOME</a></li>
+                        <li>|</li>
+                        <li><a href="#motto">OFFER</a></li>
+                        <li>|</li>
+                        <li><a href="#gallery">GALLERY</a></li>
+                        <li>|</li>
+                        <li><a href="#team">TEAM</a></li>
+                        <li>|</li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li>|</li>
+                        <li><a href="#prices-page-tag">PRICES</a></li>
+                        <li>|</li>
+                        <li><a href="#contact-tag">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>  
+            <section  id="photo-header">
+                    <div class="animated bounceIn" id="welcome-text">
+                        <hr class="hr-welcome-text"><h1>High mountains and rocks - just at your fingertips</h1><hr class="hr-welcome-text">
+                     </div>
+                     <a class="animated fadeIn" id="welcome-button-hover" href="#contact"><!--<button id="welcome-button">-->Book your flight!<!--</button>--></a>
+                </section>  
+        </header>
+
+        <main>
+            <section id="motto">
+                <h1>Join us for an incredible sky adventure, breathtaking views, glaciers seen from above, endless space..</h1>
+                <!--<button id="motto-button">Contact us!</button>-->
+            </section>
+            <section data-animate id="offer">
+                <div class="offer-element" id="offer-flight">
+                    <img src="images/plane.png" alt="Plane">
+                    <h1>Fly above glaciers</h1>
+                    <p>We take off from Sallanche Airport - it's only 20km away from Chamonix. Feel comfortable and safe in our Seneca PA-34.</p>
+                </div>
+                <div class="offer-element" id="offer-views">
+                    <img src="images/views.png" alt="Views">
+                    <h1>Incredible views</h1>
+                    <p>High mountains, rocks, glaciers, shelters, watched from above. The most memorable moments for whole life.</p>
+                </div>
+                <div class="offer-element" id="offer-video">
+                    <img src="images/camera.png" alt="Commemorative video">
+                    <h1>Commemorative video</h1>
+                    <p>Our aircraft is fitted with four camcorders recording the views and your reactions as well.</p>
+                </div>
+                <div class="offer-element" id="offer-ashutter">
+                    <img src="images/bus.png" alt="Airport shuttle">
+                    <h1>Airport shuttle</h1>
+                    <p>If you wish our car will pick you up from any place in the area, and then drive you back after flight.</p>
+                </div>
+                <div class="offer-element" id="offer-staff">
+                    <img src="images/license.png" alt="Our staff">
+                    <h1>Our staff</h1>
+                    <p>We know what we have to do. We have a lot of experience and our first rule is "safety first". You do not have to worry about nothing with our crew.</p>    
+                </div>
+                <div class="offer-element" id="offer-questions">
+                    <img src="images/qmark.png" alt="Questions">
+                    <h1>Any questions?</h1>
+                    <p>Do not hesitate to contact us, we are wainting for your contact!</p>  
+                </div>   
+            </section>
+            <section id="gallery">
+                <h1>GALLERY</h1>
+                <h3>Look about this amazing views from our earlier flights</h3>
+                <hr class="hr-line">
+                <div id="gallery-container">
+                  <div id="photo-1" class="image"><img data-action="zoom"src="images/gallery-1.jpg" alt=""></div>
+                  <div id="photo-2" class="image"><img src="images/gallery-2.jpg" alt=""></div>
+                  <div id="photo-3" class="image"><img src="images/gallery-3.jpg" alt=""></div>
+                  <div id="photo-4" class="image"><img src="images/gallery-4.jpg" alt=""></div>
+                  <div id="photo-5" class="image"><img src="images/gallery-5.jpg" alt=""></div>
+                  <div id="photo-6" class="image"><img src="images/gallery-6.jpg" alt=""></div>
+                </div>
+            </section>
+            <section id="team">
+                <h1>OUR TEAM</h1>
+                <h3>We are people with passion. Sky and mountains are our second home.</h3>
+                <hr class="hr-line">
+                <div id="team-container">
+                    <div class="staff">
+                        <img src="images/team-1.jpg" alt=""> <!-- radius 100% -->
+                        <h2>PRZEMYSŁAW ORCHOLSKI</h2>
+                        <h3>Pilot</h3>
+                        <p>"I am a pilot in Polish Airlines LOT with years of flying experience<br>I also flew on a paraglide from Mont Blanc"</p>
+                        <p class="social-icons">
+                            <a href=""><i class="fab fa-facebook-square">&nbsp;</i></a>
+                            <a href=""><i class="fab fa-twitter-square">&nbsp;</i></a>
+                           <a href=""><i class="fab fa-google-plus-square">&nbsp;</i></a>
+                            <a href=""><i class="fas fa-envelope">&nbsp;</i></a>
+                        </p>
+                    </div>
+                    <div class="staff">
+                        <img src="images/team-2.jpg" alt=""> <!-- radius 100% -->
+                        <h2>ADRIAN SUDER</h2>
+                        <h3>Manager</h3>
+                        <p>"I spent half of my life living and working in mountains.<br>We want to show you their best views but from above."</p>
+                        <p class="social-icons">
+                                <a href=""><i class="fab fa-facebook-square">&nbsp;</i></a>
+                                <a href=""><i class="fab fa-twitter-square">&nbsp;</i></a>
+                               <a href=""><i class="fab fa-google-plus-square">&nbsp;</i></a>
+                                <a href=""><i class="fab fa-instagram">&nbsp;</i></a>
+                            </p>
+                    </div>
+                </div>
+                <hr class="hr-line"> 
+            </section>
+            <section id="about">
+                <h1>ABOUT</h1>
+                <hr class="hr-line">
+                <div id="about-container">
+                    <div id="biography">
+                        <h3>Alps from bird's eye view</h3>
+                        <p>So you've experienced all of sights in Alps near the Mont Blanc? No matter where in the world you’ve travelled to before, we will show you the most beautiful views according to us. You do not have to hike anywhere. All that - from a comfortable and safe passenger seat. Imagine for a moment flying above the Mont Blanc, enjoying a bird’s-eye view Aiguille du Midi Cable Car or off-piste skiers in Valle Blanche… Maybe you would like to have a photo on a pilots seat? <br>No problem, we are sure that we will live up to your expectations! </p>
+                    </div>
+                    <div id="info">
+                        <h3>&nbsp;</h3>
+                        <ul id="our-info">
+                            <li><i class="fas fa-user-circle">&nbsp;</i> Przemysław Orcholski</li>
+                            <li><i class="fas fa-phone">&nbsp;</i> +33 685 321 448</li>
+                            <li><i class="fas fa-envelope">&nbsp;</i> booking@montblancflights.com</li>
+                            <li><i class="fas fa-map-marker-alt">&nbsp;</i> Chamonix, France</li>
+                            <li><i class="fas fa-plane-departure">&nbsp;</i> Sallanche Airport</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div id="prices-page-tag"></div>
+            </section>
+            <section  class="section" id="prices">
+                <h1>PRICES</h1>
+                <hr class="hr-line">
+                    <div  id="prices-container">
+                        <img src="images/price.png" alt="Prices">
+                        <p>The price is €100 per person! Just for €100 you can admire the Alps from bird's eye view.<br> The prices are including flight and airport shuttle. We can also prepare a proffesional, edited video of your flight.<br> It will be an unforgetable souvenir to bring your memories back and share them with you friends and family.  </p>
+                    </div>
+                <hr id="contact-tag" class="hr-line">
+            </section>
+            <section id="contact">
+                <h1>CONTACT US!</h1>
+                <p>Ask us a question or book your flight here</p>
+                <ul>
+                    <li>
+                        <input type="text" id="name" name="email" placeholder="Name and surname" required >
+                    </li>
+                    <li>
+                    	<input type="email" id="email" name="email" placeholder="Your e-mail" required>
+                    </li>
+                    <li>
+                        <input type="date" id="data" name="data" >
+                    </li>
+                    <li>
+                        <textarea id="message" tabindex="4" cols="39" name="x-message" rows="7" placeholder="Message"></textarea>
+                    </li>
+                    <li>
+                        <input id="submit" name="submit" type="button" value="Send">
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>Developed by <strong>Adrian Suder</strong>, Student of WSEI, adrian.suder95@gmail.com</p>
+        </footer>
+    </div>
+    <!-- POCZĄTEK JAVA SCRIPTU -->
+    <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("top-header");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+             header.classList.remove("sticky");
+            }
+        }
+        
+
+        // Cache selectors scrollspy, activate nav buttons
+        var lastId,
+            topMenu = $("#top-menu"),
+            topMenuHeight = topMenu.outerHeight()+15,
+            // All list items
+            menuItems = topMenu.find("a"),
+            // Anchors corresponding to menu items
+            scrollItems = menuItems.map(function(){
+            var item = $($(this).attr("href"));
+            if (item.length) { return item; }
+            });
+
+        // Bind click handler to menu items
+        // so we can get a fancy scroll animation
+        menuItems.click(function(e){
+        var href = $(this).attr("href"),
+            offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+        $('html, body').stop().animate({ 
+            scrollTop: offsetTop
+        }, 300);
+        e.preventDefault();
+        });
+
+        // Bind to scroll
+        $(window).scroll(function(){
+        // Get container scroll position
+        var fromTop = $(this).scrollTop()+topMenuHeight;
+        
+        // Get id of current scroll item
+        var cur = scrollItems.map(function(){
+            if ($(this).offset().top < fromTop)
+            return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length-1];
+        var id = cur && cur.length ? cur[0].id : "";
+        
+        if (lastId !== id) {
+            lastId = id;
+            // Set/remove active class
+            menuItems
+                .parent().removeClass("active")
+                .end().filter("[href='#"+id+"']").parent().addClass("active");
+        }                   
+        });
+
+    </script>
+</body>
+</html>

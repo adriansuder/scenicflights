@@ -1,0 +1,296 @@
+*{
+    list-style: none;
+    font-family: Lato, sans-serif;
+    text-decoration: none;
+}
+html, body, #container, header{ 
+    margin:0; 
+    padding:0; 
+    height:100%; 
+  }
+/* STYLE ELEMENTÓW HEADERA */
+.active{
+    border-bottom: #37cadd solid 2px;
+}
+header nav ul li, a{
+    color: white;
+    font-size: 1em;
+}
+header nav ul li a:hover{
+    border-bottom: #37cadd solid 2px;
+    font-size: 1.1em;
+}
+#header-bg{
+    background: url(images/mb-background.jpg);
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -9999;
+    filter: brightness(0.6);
+}
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    /*background: rgba(255,255,255, 0.5);*/
+    grid-area: c1;
+}
+.top-header nav ul{
+    width: 700px;
+    display: flex;  
+    justify-content: space-between;
+    padding: 40px 70px 0px 0px;
+}
+#logo img{
+    padding: 10px 0px 0px 30px;
+    height: 70%;
+}
+#photo-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: c2;
+}
+#welcome-text{
+    color: white;
+    font-weight: 300;
+    font-size: 2em;
+    text-shadow: 1px 1px rgb(184, 179, 179);
+    text-align: center;
+}
+#welcome-button-hover{
+    margin-top: 100px;
+    background: rgba(39, 39, 39, 0.822);
+    border: 2px solid #008CBA;
+    border-radius: 100px;
+    color: white;
+    padding: 30px 40px;
+    font-size: 20px;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    text-align: center;
+}
+#welcome-button-hover:hover{
+    background: #008CBA;
+    width: 12%;
+}
+.hr-welcome-text{
+    height: 2px;
+    background: white;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas: 
+    "c1 c1 c1"
+    "c2 c2 c2";
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0d2643+0,0d2643+32,003c50+95&1+4,0.91+15,0+92 */
+    background: -moz-linear-gradient(top, rgba(13,38,67,1) 0%, rgba(13,38,67,1) 4%, rgba(13,38,67,0.91) 15%, rgba(13,38,67,0.71) 32%, rgba(1,59,79,0) 92%, rgba(0,60,80,0) 95%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(13,38,67,1) 0%,rgba(13,38,67,1) 4%,rgba(13,38,67,0.91) 15%,rgba(13,38,67,0.71) 32%,rgba(1,59,79,0) 92%,rgba(0,60,80,0) 95%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(13,38,67,1) 0%,rgba(13,38,67,1) 4%,rgba(13,38,67,0.91) 15%,rgba(13,38,67,0.71) 32%,rgba(1,59,79,0) 92%,rgba(0,60,80,0) 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d2643', endColorstr='#00003c50',GradientType=0 ); /* IE6-9 */     
+}
+
+/* KONIEC STYLI ELEMENTÓW HEADERA */ 
+main{
+    color: #555;
+}
+#motto{
+    background: #eeeeee;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+#motto-button{
+    background: #37cadd;
+    color: white;
+    font-size: 24px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+/*#offer{
+    padding: 3% 6%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}*/
+
+/* START SEKCJI OFERTA - GRID */
+#offer{
+    display: grid;
+    grid-template: 
+    'c1 c2 c3'
+    'c4 c5 c6';
+    margin: 6% 6%;
+    text-align: center;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#offer-flight{grid-area:c1;}
+#offer-views{grid-area:c2;}
+#offer-video{grid-area:c3;}
+#offer-ashutter{grid-area:c4;}
+#offer-staff{grid-area:c5;}
+#offer-questions{grid-area:c6;}
+.offer-element{
+    padding-bottom: 10%;
+}
+.offer-element{
+    margin: 0 8%;
+}
+
+/* KOENIEC SEKCJI OFERTA */
+.hr-line{
+    width: 70%;
+}
+#gallery{
+    text-align: center;
+    background-color: #eee;
+    padding: 2% 4%;
+}
+#gallery-container{
+    margin: 0 auto;
+    padding: 3% 0;
+    max-width: 900px;
+    display: grid;
+    grid-template:
+    't1 t2 t3'
+    't4 t5 t6';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    /*grid-gap: 10px 13px;*/
+}
+#gallery-container .image{
+    max-height: 300px;
+    max-width: 300px;
+}
+.image:hover{
+    filter: brightness(0.4);
+}
+#photo-1{
+    grid-area: t1;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+#photo-2{
+    grid-area: t2;
+    grid-column-start: 3;
+    grid-row-start: 1;}
+#photo-3{
+    grid-area: t3;
+    grid-column-start: 4;
+    grid-row-start: 1;}
+#photo-4{
+    grid-area: t4;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+#photo-5{
+    grid-area: t5;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+#photo-6{
+    grid-area: t6;
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+#team{
+    text-align: center;
+    padding: 4% 0;
+}
+#team-container{
+    display: flex;
+    justify-content: center;
+}
+.social-icons a i{
+    color: #555;
+    font-size: 36px;
+    margin: 0 1%;
+}
+.social-icons a i:hover{
+    color: #37cadd;
+    font-size: 40px;
+
+}
+.staff img{
+    padding: 4% 6%;
+    border-radius: 100%;
+    max-width: 400px;
+}
+#about {
+    background: url('images/about-bg.jpg') fixed;
+    text-align: center;
+    padding: 5% 5%;
+    color: white;
+}
+#about-container{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    color: white;
+    line-height: 36px;
+}
+#biography{
+    max-width: 70%;
+}
+#biography p{
+    letter-spacing: 1px;
+}
+#prices{
+    padding: 4% 0;
+}
+#prices h1{
+    text-align: center;
+}
+#prices-container{
+    display: flex;
+    justify-content: space-around;
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 2% 0;
+    font-size: 1.2em;
+    line-height: 30px;
+    align-items: center;
+}
+#prices p{
+    padding: 0 2%;
+    max-width: 80%;
+}
+#prices img{
+    max-height: 130px;
+}
+#contact{
+    background: url('images/contact-bg.jpg') fixed;
+    color: white;
+    text-align: center;
+    padding: 5% 3%;
+    margin: 0 auto;
+}
+#contact ul li input, textarea{
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    background: rgba(255, 255, 255, 0.657);
+    border: 2px solid gray;
+    text-align: center;
+}
+::-webkit-input-placeholder{
+    color: black;
+}
+footer{
+    color: white;
+    background: black;
+    text-align: center;
+    padding: 0.5% 0;
+}
